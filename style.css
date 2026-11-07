@@ -1,0 +1,175 @@
+.hero{
+    color: #1e293b;
+    background: white;
+    text-align: center;
+    padding: 5rem 1rem;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.hero p{
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    margin-bottom: 2rem;
+}
+
+.btn{
+display: inline-block;
+background-color: #2563eb;
+color: white;
+padding: 0.8rem 2rem;
+border-radius: 8px;
+text-decoration: none;
+}
+.btn:hover{
+    background-color: #1d4ed8;
+}
+header{
+    background-color: #1e293b;
+    padding: 1rem 2rem;
+}
+nav{
+    display: flex;
+    gap: 1.5rem;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+nav a:hover{
+    color:#60a5fa ;
+}
+#about{
+max-width: 700px;
+margin: 0 auto;
+padding: 4rem 1rem;
+text-align: center;
+}
+#about img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#about p{
+    line-height: 1.8;
+    margin-top: 1rem;
+}
+#skills{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+.skills-list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.skills-list li{
+    background-color: #1e293b;
+    color: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+.skills-list li:hover{
+    background-color: #2563eb;
+}
+#projects{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+.card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.card article{
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.card article h3{
+    margin-bottom: 0.5rem;
+}
+.card article p{
+    margin-bottom: 1rem;
+    color: #475569;
+}
+#education {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+#education article{
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+}
+#education article h3{
+    margin-bottom: 0.5rem;
+}
+#education article p{
+    color:  #475569;
+}
+#contact{
+    max-width: 600px;
+    padding: 4rem 1rem;
+    margin: 0 auto;
+    text-align: center;
+}
+#contact p{
+    font-size: 1.1rem;
+    margin-top: 1rem;
+}
+#contact p a{
+    color: #2563eb;
+}
+.social-links{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #about,
+  #skills,
+  #education,
+  #projects,
+  #contact {
+    padding: 2.5rem 1rem;
+  }
+
+  .social-links {
+    flex-direction: column;
+    align-items: center;
+  }
+}
